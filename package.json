@@ -1,0 +1,20 @@
+{
+  "name": "simple-node-app",
+  "version": "1.0.0",
+  "description": "Simple Node Server App",
+  "main": "index.js",
+  "scripts": {
+    "start":"node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eranilkapoor/simple-node-app.git"
+  },
+  "author": "Anil Kapoor",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eranilkapoor/simple-node-app/issues"
+  },
+  "homepage": "https://github.com/eranilkapoor/simple-node-app#readme"
+}

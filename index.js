@@ -1,12 +1,13 @@
 const http = require('http');
 
 const server = http.createServer((req, res) => {
-	res.writeHead(200, { 'Content-Type': 'text/plain' });
-  	res.end('okay');
-});
+	if(req.method === 'GET' && req.url === '/'){
+		res.end('Hello Anil');
+	}
 
-http.get('http://localhost:3000', (res) => {
-	console.log('Hello Anil');
+	if(req.method === 'GET' && req.url === '/api'){
+		res.end('Hello Api');
+	}
 });
 
 server.listen(3000,()=>{
